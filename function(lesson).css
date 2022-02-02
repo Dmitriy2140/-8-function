@@ -1,0 +1,269 @@
+var printMulripleTimes = function (howManyTimes, whatToDraw) {
+ for (var i = 0; i < howManyTimes; i++) {
+  console.log (i + " " + whatToDraw);
+ }
+};
+
+undefined
+var printMulripleTimes = function (howManyTimes, whatToDraw) {
+ for (var i = 0; i < howManyTimes; i++) {
+  console.log (i + " " + whatToDraw);
+ }
+};
+printMulripleTimes(5,"=^.^=");
+VM454:3 0 =^.^=
+VM454:3 1 =^.^=
+VM454:3 2 =^.^=
+VM454:3 3 =^.^=
+VM454:3 4 =^.^=
+undefined
+var printMulripleTimes = function (howManyTimes, whatToDraw) {
+ for (var i = 0; i < howManyTimes; i++) {
+  console.log (i + " " + whatToDraw);
+ }
+};
+printMulripleTimes(4," =^.^=");
+VM469:3 0  =^.^=
+VM469:3 1  =^.^=
+VM469:3 2  =^.^=
+VM469:3 3  =^.^=
+undefined
+var printMulripleTimes = function (howManyTimes, whatToDraw) {
+ for (var i = 0; i < howManyTimes; i++) {
+  console.log (i + " " + whatToDraw);
+ }
+};
+printMulripleTimes(4,"^_^");
+VM484:3 0 ^_^
+VM484:3 1 ^_^
+VM484:3 2 ^_^
+VM484:3 3 ^_^
+undefined
+var printMulripleTimes = function (howManyTimes, whatToDraw) {
+ for (var i = 0; i < howManyTimes; i++) {
+  console.log (i + " " + whatToDraw);
+ }
+};
+printMulripleTimes(6,"(>_<)");
+VM503:3 0 (>_<)
+VM503:3 1 (>_<)
+VM503:3 2 (>_<)
+VM503:3 3 (>_<)
+VM503:3 4 (>_<)
+VM503:3 5 (>_<)
+undefined
+printMulripleTimes(5, :-));
+VM547:1 Uncaught SyntaxError: Unexpected token ':'
+printMulripleTimes(5, ":-)");
+VM503:3 0 :-)
+VM503:3 1 :-)
+VM503:3 2 :-)
+VM503:3 3 :-)
+VM503:3 4 :-)
+undefined
+5 + Math.floor;
+'5function floor() { [native code] }'
+5 + Math.floor();
+NaN
+5 + Math.floor(32);
+37
+5 + Math.floor(3.4242);
+8
+var double = function(number) {
+return number * 2;
+};
+undefined
+Number(4);
+4
+return(4);
+VM918:1 Uncaught SyntaxError: Illegal return statement
+double(8);
+16
+double(120);
+240
+double();
+NaN
+double;
+ƒ (number) {
+return number * 2;
+}
+double(5) + double(6);
+22
+double(double(3));
+12
+var pickRandomWord = function (words) {
+return words [Math.floor(Math.random() * words.length)];
+};
+var randomWords = ["Планета", "Червяк", "Цветок", "Компьютер"];
+undefined
+pickRandomWord(randomWords);
+'Цветок'
+pickRandomWord(words);
+'макака'
+pickRandomWord(words);
+'программа'
+pickRandomWord(words);
+'программа'
+pickRandomWord(randomWords);
+'Планета'
+pickRandomWord(["Коля", "Петя", "Ира"]);
+'Коля'
+var randomBodyParts = ["нос", "глаз", "череп"];
+var randomAdjectives = ["вонючая", "унылая", "дурацкая", "кривая"];
+var randomWords = ["муха", "выдра", "дубина", "мартышка", "крыса"];
+//соединяем строки в предложения:
+var randomString = "У тебя " + pickRandomWord(randomBodyParts) + ", словно" + pickRandomWord(randomAdjectives) + 
+pickRandomWord(randomWords) + "!";
+
+undefined
+var randomBodyParts = ["нос", "глаз", "череп"];
+var randomAdjectives = ["вонючая", "унылая", "дурацкая", "кривая"];
+var randomWords = ["муха", "выдра", "дубина", "мартышка", "крыса"];
+//соединяем строки в предложения:
+var randomString = "У тебя " + pickRandomWord(randomBodyParts) + ", словно" + pickRandomWord(randomAdjectives) + 
+pickRandomWord(randomWords) + "!";
+randomString;
+'У тебя череп, словновонючаямуха!'
+var randomBodyParts = ["нос", "глаз", "череп"];
+var randomAdjectives = ["вонючая", "унылая", "дурацкая", "кривая"];
+var randomWords = ["муха", "выдра", "дубина", "мартышка", "крыса"];
+//соединяем строки в предложения:
+var randomString = "У тебя " + pickRandomWord(randomBodyParts) + ", словно" + pickRandomWord(randomAdjectives) + " " +  
+pickRandomWord(randomWords) + "!";
+randomString;
+'У тебя череп, словновонючая мартышка!'
+var randomBodyParts = ["нос", "глаз", "череп"];
+var randomAdjectives = ["вонючая", "унылая", "дурацкая", "кривая"];
+var randomWords = ["муха", "выдра", "дубина", "мартышка", "крыса"];
+//соединяем строки в предложения:
+var randomString = "У тебя " + pickRandomWord(randomBodyParts) + ", словно " + pickRandomWord(randomAdjectives) + " " +  
+pickRandomWord(randomWords) + "!";
+randomString;
+'У тебя череп, словно дурацкая мартышка!'
+// делаем генератор дразнилок функцией.
+var generateRandomInsult = function () {
+var randomBodyParts = ["нос", "глаз", "череп"];
+var randomAdjectives = ["вонючая", "унылая", "дурацкая", "кривая"];
+var randomWords = ["муха", "выдра", "дубина", "мартышка", "крыса"];
+// соединяем случайные строки в предложения
+var randomString = "У тебя " + pickRandomWord(randomBodyParts) + ", словно " + pickRandomWord(randomAdjectives) + " " +  
+pickRandomWord(randomWords) + "!";
+return randomString;
+    };
+undefined
+// делаем генератор дразнилок функцией.
+var generateRandomInsult = function () {
+var randomBodyParts = ["нос", "глаз", "череп"];
+var randomAdjectives = ["вонючая", "унылая", "дурацкая", "кривая"];
+var randomWords = ["муха", "выдра", "дубина", "мартышка", "крыса"];
+// соединяем случайные строки в предложения
+var randomString = "У тебя " + pickRandomWord(randomBodyParts) + ", словно " + pickRandomWord(randomAdjectives) + " " +  
+pickRandomWord(randomWords) + "!";
+return randomString;
+    };
+generateRandomInsult();
+'У тебя нос, словно дурацкая мартышка!'
+generateRandomInsult;
+ƒ () {
+var randomBodyParts = ["нос", "глаз", "череп"];
+var randomAdjectives = ["вонючая", "унылая", "дурацкая", "кривая"];
+var randomWords = ["муха", "выдра", "дубина", "мартышка", "крыса"];
+// соединя…
+generateRandomInsult();
+'У тебя глаз, словно унылая дубина!'
+generateRandomInsult();
+'У тебя нос, словно кривая выдра!'
+generateRandomInsult();
+'У тебя глаз, словно кривая крыса!'
+generateRandomInsult();
+'У тебя череп, словно унылая дубина!'
+var fifthLetter = function (name) {
+if (name.length < 5) {
+return; 
+}
+
+return "Пятая буква вашего имени: " + name[4] + ".";
+};
+undefined
+fifthLetter(Dima);
+VM2854:1 Uncaught ReferenceError: Dima is not defined
+    at <anonymous>:1:13
+(anonymous) @ VM2854:1
+fifthLetter(Dmitriy);
+VM2883:1 Uncaught ReferenceError: Dmitriy is not defined
+    at <anonymous>:1:13
+(anonymous) @ VM2883:1
+fifthLetter(Dmitr);
+VM2899:1 Uncaught ReferenceError: Dmitr is not defined
+    at <anonymous>:1:13
+(anonymous) @ VM2899:1
+fifthLetter("Dmitriy");
+'Пятая буква вашего имени: r.'
+fifthLetter("Dima");
+undefined
+var medalForScore = function() {
+var if(score < 3) {
+return "Бронзовая";
+}
+if(score < 7) {
+return "Серебрянная";
+}
+return "Золотая";
+};
+VM3213:2 Uncaught SyntaxError: Unexpected token 'if'
+medalForScore(4);
+VM3262:1 Uncaught ReferenceError: medalForScore is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM3262:1
+var medalForScore = function(score) {
+var if(score < 3) {
+return "Бронзовая";
+}
+if(score < 7) {
+return "Серебрянная";
+}
+return "Золотая";
+};
+medalForScore(4);
+VM3332:2 Uncaught SyntaxError: Unexpected token 'if'
+var medalForScore = function(score) {
+if(score < 3) {
+return "Бронзовая";
+}
+if(score < 7) {
+return "Серебрянная";
+}
+return "Золотая";
+};
+medalForScore(4);
+'Серебрянная'
+var medalForScore = function(score) {
+if(score < 3) {
+return "Бронзовая";
+}
+if(score < 7) {
+return "Серебрянная";
+}
+return "Золотая";
+};
+medalForScore(7);
+'Золотая'
+//короткая и длинная запись функий:
+var double = function(number) {
+number * 2;
+};
+double(4);
+
+undefined
+//короткая и длинная запись функий:
+var double = function(number) {
+return number * 2;
+};
+double(4);
+8
+//короткая запись выглядит так:
+function double(number) {
+return number * 2;
+};
+double(4);
+8
